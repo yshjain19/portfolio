@@ -31,7 +31,9 @@ function App() {
       if (!el) return;
 
       // Audio feedback
-      if (el.classList.contains('btn--primary') || el.classList.contains('project-link--primary')) {
+      if (el.classList.contains('hero__avatar') || el.closest('.hero__avatar-system')) {
+        playClickSound('avatar');
+      } else if (el.classList.contains('btn--primary') || el.classList.contains('project-link--primary')) {
         playClickSound('primary');
       } else if (el.classList.contains('theme-btn')) {
         playClickSound('toggle');

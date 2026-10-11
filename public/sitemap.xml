@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://yshjain19.github.io/</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://yshjain19.github.io/avatar.jpg</image:loc>
+      <image:title>Yash Jain — Profile Portrait</image:title>
+      <image:caption>Yash Jain, Full-Stack Developer &amp; Backend Engineer from Indore</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://yshjain19.github.io/og-image.jpg</image:loc>
+      <image:title>Yash Jain — Developer Portfolio Overview</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://yshjain19.github.io/svvv-notes.jpg</image:loc>
+      <image:title>SVVV Notes — Academic Platform Interface</image:title>
+      <image:caption>SVVV Notes platform with 9.7K+ downloads and 1.3K+ users</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://yshjain19.github.io/prestigestay.jpg</image:loc>
+      <image:title>PrestigeStay — Full-Stack Accommodation Platform</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://yshjain19.github.io/kisanmitra.jpg</image:loc>
+      <image:title>Kisan Mitra AI — Agricultural Advisory Application</image:title>
+    </image:image>
   </url>
 </urlset>

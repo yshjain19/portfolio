@@ -31,6 +31,8 @@ export default function ProjectCard({ project }) {
             src={thumbnail}
             alt={thumbnailAlt}
             loading="lazy"
+            width="600"
+            height="375"
           />
         </div>
       </a>

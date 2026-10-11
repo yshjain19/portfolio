@@ -31,40 +31,51 @@ export function playClickSound(type = 'click') {
     const gain = audioCtx.createGain();
 
     if (type === 'primary') {
-      // Crisp tech pop for primary actions
+      // Loud, rich tech punch for primary CTA buttons
       osc.type = 'sine';
-      osc.frequency.setValueAtTime(750, now);
-      osc.frequency.exponentialRampToValueAtTime(320, now + 0.06);
-      gain.gain.setValueAtTime(0.07, now);
+      osc.frequency.setValueAtTime(880, now);
+      osc.frequency.exponentialRampToValueAtTime(260, now + 0.09);
+      gain.gain.setValueAtTime(0.38, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.09);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(now);
+      osc.stop(now + 0.09);
+    } else if (type === 'toggle') {
+      // Loud, bright chime for theme / mode toggle
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(587, now);
+      osc.frequency.exponentialRampToValueAtTime(1174, now + 0.12);
+      gain.gain.setValueAtTime(0.35, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(now);
+      osc.stop(now + 0.12);
+    } else if (type === 'avatar') {
+      // Loud, futuristic holographic blip for profile avatar
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(980, now);
+      osc.frequency.exponentialRampToValueAtTime(440, now + 0.11);
+      gain.gain.setValueAtTime(0.40, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.11);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(now);
+      osc.stop(now + 0.11);
+    } else {
+      // Crisp, loud tactile mechanical click
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(620, now);
+      osc.frequency.exponentialRampToValueAtTime(180, now + 0.06);
+      gain.gain.setValueAtTime(0.32, now);
       gain.gain.exponentialRampToValueAtTime(0.001, now + 0.06);
       osc.connect(gain);
       gain.connect(audioCtx.destination);
       osc.start(now);
       osc.stop(now + 0.06);
-    } else if (type === 'toggle') {
-      // Smooth subtle chime for theme / sound toggle
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(520, now);
-      osc.frequency.exponentialRampToValueAtTime(840, now + 0.08);
-      gain.gain.setValueAtTime(0.06, now);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.08);
-      osc.connect(gain);
-      gain.connect(audioCtx.destination);
-      osc.start(now);
-      osc.stop(now + 0.08);
-    } else {
-      // Tactile mechanical key click
-      osc.type = 'triangle';
-      osc.frequency.setValueAtTime(480, now);
-      osc.frequency.exponentialRampToValueAtTime(160, now + 0.04);
-      gain.gain.setValueAtTime(0.05, now);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
-      osc.connect(gain);
-      gain.connect(audioCtx.destination);
-      osc.start(now);
-      osc.stop(now + 0.04);
     }
-  } catch (err) {
+  } catch {
     // Ignore autoplay or audio context errors
   }
 }

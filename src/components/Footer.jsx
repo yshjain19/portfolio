@@ -1,4 +1,3 @@
-import { GitFork } from 'lucide-react';
 import { PERSONAL } from '../data/config';
 
 export default function Footer() {
