@@ -384,7 +384,7 @@ export default function SiteMapModal({ isOpen, onClose }) {
         {/* Footer */}
         <div className="sitemap-modal__footer">
           <span className="sitemap-footer-note">
-            Canonical URL: <code>https://yshjain19.github.io/</code> · Updated: 2026-10-13
+            Canonical URL: <code>https://yashjain.urbackend.in/</code> · Updated: 2026-10-13
           </span>
           <button className="btn btn--primary" onClick={onClose}>
             Close Site Map
