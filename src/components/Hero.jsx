@@ -58,15 +58,15 @@ export default function Hero() {
         return;
       }
 
-      // Check if mouse is hovering over any interactive option or scrolled past hero
+      // Check if mouse is hovering over interactive options, text content, or scrolled past hero
       const targetEl = document.elementFromPoint(e.clientX, e.clientY);
-      const isOverOption = !!targetEl?.closest(
-        'a, button, [role="button"], .dock-item, .dock-group, .inline-tech-badge, input, textarea, .project-card, .footer__link, .sitemap-link-btn, .tech-chip, .contact__item, .hero-text-link'
+      const isOverInteractiveOrText = !!targetEl?.closest(
+        'a, button, [role="button"], .dock-item, .dock-group, .inline-tech-badge, input, textarea, .project-card, .footer__link, .sitemap-link-btn, .tech-chip, .contact__item, .hero-text-link, .hero-signature__top-block, .hero-signature__content'
       );
 
       // If user has scrolled past hero, avatar must stay parked at its home slot
-      const isScrolledPast = window.scrollY > 420;
-      const shouldStick = isOverOption || isScrolledPast;
+      const isScrolledPast = window.scrollY > 380;
+      const shouldStick = isOverInteractiveOrText || isScrolledPast;
 
       const p = physicsRef.current;
       p.isStuck = shouldStick;
@@ -84,11 +84,15 @@ export default function Hero() {
         const slotCenterX = rect.left + rect.width / 2;
         const slotCenterY = rect.top + rect.height / 2;
 
-        p.targetX = e.clientX - slotCenterX;
-        p.targetY = e.clientY - slotCenterY;
-        p.targetScale = 0.94;
-        p.targetTiltY = Math.max(-12, Math.min(12, (e.movementX || 0) * 1.5));
-        p.targetTiltX = Math.max(-12, Math.min(12, -(e.movementY || 0) * 1.5));
+        const rawDeltaX = e.clientX - slotCenterX;
+        const rawDeltaY = e.clientY - slotCenterY;
+
+        // Tethered interactive float so avatar stays anchored to its right-side slot zone
+        p.targetX = Math.max(-85, Math.min(85, rawDeltaX * 0.42));
+        p.targetY = Math.max(-85, Math.min(85, rawDeltaY * 0.42));
+        p.targetScale = 0.95;
+        p.targetTiltY = Math.max(-10, Math.min(10, (e.movementX || 0) * 1.2));
+        p.targetTiltX = Math.max(-10, Math.min(10, -(e.movementY || 0) * 1.2));
       }
     };
 

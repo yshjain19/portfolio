@@ -685,29 +685,30 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
 
 /* ── Impact / Highlighted Metrics (Reference Style) ────────── */
 .impact-section {
-  padding: 2.75rem 0 3rem;
+  padding: 3.5rem 0 6.5rem;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background: var(--bg);
+  position: relative;
 }
 
 .impact-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2.5rem 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem 1.25rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .impact-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem 1.5rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   .impact-grid {
-    grid-template-columns: 1fr;
-    gap: 1.75rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem 1rem;
   }
 }
 
@@ -2248,7 +2249,7 @@ body, main, section, .navbar, .footer, .project-card, .impact-item, .tech-chip, 
    ============================================================ */
 
 .hero-signature {
-  padding: 5rem 0 3.5rem;
+  padding: 5rem 0 4.5rem;
   position: relative;
   overflow: visible;
 }
