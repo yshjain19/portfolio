@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yshjain19.github.io/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yshjain19.github.io/" />
     <image:image>
       <image:loc>https://yshjain19.github.io/avatar.jpg</image:loc>
       <image:title>Yash Jain — Profile Portrait</image:title>
-      <image:caption>Yash Jain, Full-Stack Developer &amp; Backend Engineer from Indore</image:caption>
+      <image:caption>Yash Jain, Full-Stack Developer &amp; Backend Engineer from Indore, India</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://yshjain19.github.io/og-image.jpg</image:loc>
       <image:title>Yash Jain — Developer Portfolio Overview</image:title>
+      <image:caption>Official personal portfolio of Yash Jain featuring SVVV Notes, PrestigeStay, and Kisan Mitra AI</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://yshjain19.github.io/svvv-notes.jpg</image:loc>
@@ -23,10 +26,60 @@
     <image:image>
       <image:loc>https://yshjain19.github.io/prestigestay.jpg</image:loc>
       <image:title>PrestigeStay — Full-Stack Accommodation Platform</image:title>
+      <image:caption>Full-stack rental marketplace web application built with Node.js, Express, and MongoDB</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://yshjain19.github.io/kisanmitra.jpg</image:loc>
       <image:title>Kisan Mitra AI — Agricultural Advisory Application</image:title>
+      <image:caption>AI-powered advisory and market price application for farmers</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://yshjain19.github.io/#projects</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yshjain19.github.io/#about</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yshjain19.github.io/#impact</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yshjain19.github.io/#skills</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yshjain19.github.io/#github</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yshjain19.github.io/#education</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yshjain19.github.io/#contact</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yshjain19.github.io/#sitemap</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

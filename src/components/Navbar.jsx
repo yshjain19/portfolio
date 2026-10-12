@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Sun, Moon, Menu, X, Volume2, VolumeX } from 'lucide-react';
+import { Sun, Moon, Menu, X, Volume2, VolumeX, Compass } from 'lucide-react';
 import { PERSONAL } from '../data/config';
 import { isSoundEnabled, toggleSound } from '../utils/sound';
 
 const NAV_LINKS = [
   { label: 'About', href: '#about' },
+  { label: 'Impact', href: '#impact' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
   { label: 'GitHub', href: '#github' },
@@ -12,7 +13,7 @@ const NAV_LINKS = [
   { label: 'Contact', href: '#contact' },
 ];
 
-export default function Navbar({ dark, onToggleDark }) {
+export default function Navbar({ dark, onToggleDark, onOpenSitemap }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [soundOn, setSoundOn] = useState(() => isSoundEnabled());
 
@@ -54,6 +55,16 @@ export default function Navbar({ dark, onToggleDark }) {
                 {link.label}
               </a>
             ))}
+            <button
+              type="button"
+              className="navbar__link navbar__link--sitemap"
+              onClick={onOpenSitemap}
+              aria-label="Open portfolio site map"
+              title="Explore all pages, projects and resources"
+            >
+              <Compass size={13} aria-hidden="true" />
+              Site Map
+            </button>
           </nav>
 
           {/* Right controls */}
@@ -101,6 +112,17 @@ export default function Navbar({ dark, onToggleDark }) {
               {link.label}
             </a>
           ))}
+          <button
+            type="button"
+            className="navbar__mobile-link navbar__mobile-link--sitemap"
+            onClick={() => {
+              setMenuOpen(false);
+              onOpenSitemap();
+            }}
+          >
+            <Compass size={14} aria-hidden="true" />
+            Site Map &amp; Directory
+          </button>
         </nav>
       )}
     </header>

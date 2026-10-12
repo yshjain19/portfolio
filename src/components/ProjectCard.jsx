@@ -1,13 +1,21 @@
 import { ExternalLink, GitFork } from 'lucide-react';
+import { use3DTilt } from '../utils/use3DTilt';
 
 export default function ProjectCard({ project }) {
   const { name, description, tags, live, repo, thumbnail, thumbnailAlt } = project;
+  const cardRef = use3DTilt({ maxTilt: 8, perspective: 1000, scale: 1.018, glare: true });
 
   return (
     <article
-      className="project-card"
+      ref={cardRef}
+      className="project-card project-card--3d"
       aria-label={`Project: ${name}`}
+      itemScope
+      itemType="https://schema.org/SoftwareApplication"
     >
+      {/* Specular 3D Hologram Glare Overlay */}
+      <div className="project-card__glare" aria-hidden="true" />
+
       {/* Thumbnail */}
       <a
         href={live}
@@ -15,6 +23,7 @@ export default function ProjectCard({ project }) {
         rel="noopener noreferrer"
         className="project-card__thumbnail"
         aria-label={`Open ${name} live website in new tab`}
+        itemProp="url"
       >
         <div className="project-card__browser-bar" aria-hidden="true">
           <div className="browser-dots">
@@ -33,6 +42,7 @@ export default function ProjectCard({ project }) {
             loading="lazy"
             width="600"
             height="375"
+            itemProp="image"
           />
         </div>
       </a>
@@ -40,14 +50,14 @@ export default function ProjectCard({ project }) {
       {/* Body */}
       <div className="project-card__body">
         <div className="project-card__header-row">
-          <h3 className="project-card__name">{name}</h3>
+          <h3 className="project-card__name" itemProp="name">{name}</h3>
           {project.badge && (
             <span className="project-card__badge" aria-label={`Status: ${project.badge}`}>
               {project.badge}
             </span>
           )}
         </div>
-        <p className="project-card__desc">{description}</p>
+        <p className="project-card__desc" itemProp="description">{description}</p>
 
         {/* Impact metrics if available */}
         {project.metrics && (

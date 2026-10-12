@@ -1,4 +1,4 @@
-import { GitFork, Link, Mail, ArrowRight } from 'lucide-react';
+import { GitFork, Link, ArrowRight } from 'lucide-react';
 import { PERSONAL } from '../data/config';
 
 const CONTACT_ITEMS = [
@@ -16,14 +16,6 @@ const CONTACT_ITEMS = [
     label: 'LinkedIn',
     value: 'linkedin.com/in/yash-jain-6b6647320',
     href: PERSONAL.linkedin,
-    isPlaceholder: false,
-  },
-  {
-    id: 'contact-email',
-    icon: Mail,
-    label: 'Email',
-    value: PERSONAL.email,
-    href: `mailto:${PERSONAL.email}`,
     isPlaceholder: false,
   },
 ];

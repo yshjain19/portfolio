@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags / SEO -->
-    <title>Yash Jain — Full-Stack Developer &amp; Backend Engineer | Official Portfolio</title>
-    <meta name="title" content="Yash Jain — Full-Stack Developer &amp; Backend Engineer | Official Portfolio" />
+    <title>Yash Jain</title>
+    <meta name="title" content="Yash Jain" />
     <meta name="description" content="Official personal portfolio of Yash Jain (@yshjain19). Full-Stack Web Developer, Backend Engineer, and CSE student at SVVV Indore. Creator of SVVV Notes (9.7K+ downloads, 1.3K+ users). Explore projects, tech stack, and achievements." />
-    <meta name="keywords" content="Yash Jain, yshjain19, Yash Jain developer, Yash Jain portfolio, Yash Jain SVVV, Yash Jain Indore, SVVV Notes Yash Jain, Full Stack Developer Yash Jain, Backend Engineer Indore, Shri Vaishnav Vidyapeeth Vishwavidyalaya, SVVV CSE, PrestigeStay, Kisan Mitra AI, Node.js developer Indore, React developer Indore" />
+    <meta name="keywords" content="Yash Jain, yshjain19, Yash Jain developer, Yash Jain portfolio, Yash Jain SVVV, Yash Jain Indore, SVVV Notes Yash Jain, Full Stack Developer Yash Jain, Backend Engineer Indore, Shri Vaishnav Vidyapeeth Vishwavidyalaya, SVVV CSE, PrestigeStay, Kisan Mitra AI, Node.js developer Indore, React developer Indore, MERN developer Indore" />
     <meta name="author" content="Yash Jain" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large" />
     <link rel="canonical" href="https://yshjain19.github.io/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://yshjain19.github.io/sitemap.xml" />
+
+    <!-- Geo-Targeting & Local SEO (Indore, MP, India) -->
+    <meta name="geo.region" content="IN-MP" />
+    <meta name="geo.placename" content="Indore" />
+    <meta name="geo.position" content="22.7196;75.8577" />
+    <meta name="ICBM" content="22.7196, 75.8577" />
 
     <!-- Browser Theme Color -->
     <meta name="theme-color" content="#090a0f" media="(prefers-color-scheme: dark)" />
@@ -23,7 +30,7 @@
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://yshjain19.github.io/" />
     <meta property="og:site_name" content="Yash Jain Portfolio" />
-    <meta property="og:title" content="Yash Jain — Full-Stack Developer &amp; Backend Engineer" />
+    <meta property="og:title" content="Yash Jain" />
     <meta property="og:description" content="Personal portfolio of Yash Jain (@yshjain19) — Creator of SVVV Notes (9.7K+ downloads, 1.3K+ unique users). Full-Stack &amp; Backend Engineer from Indore, India." />
     <meta property="og:image" content="https://yshjain19.github.io/og-image.jpg" />
     <meta property="og:image:secure_url" content="https://yshjain19.github.io/og-image.jpg" />
@@ -39,7 +46,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://yshjain19.github.io/" />
-    <meta name="twitter:title" content="Yash Jain — Full-Stack Developer &amp; Backend Engineer" />
+    <meta name="twitter:title" content="Yash Jain" />
     <meta name="twitter:description" content="Portfolio of Yash Jain (@yshjain19) — Creator of SVVV Notes (9.7K+ downloads). Full-Stack &amp; Backend Engineer from Indore, India." />
     <meta name="twitter:image" content="https://yshjain19.github.io/og-image.jpg" />
     <meta name="twitter:image:alt" content="Yash Jain Portfolio Banner" />
@@ -50,12 +57,12 @@
     <link rel="apple-touch-icon" href="/avatar.jpg" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Google Fonts: Outfit (Hero & Display), Plus Jakarta Sans (Modern UI), Space Grotesk & JetBrains Mono -->
+    <!-- Google Fonts: Outfit, Plus Jakarta Sans, Space Grotesk & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Structured Data (JSON-LD) for Google Search Knowledge Graph -->
+    <!-- Structured Data (JSON-LD) for Google Search Knowledge Graph & Sitelinks -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -129,8 +136,56 @@
           "mainEntity": { "@id": "https://yshjain19.github.io/#person" }
         },
         {
+          "@type": "BreadcrumbList",
+          "@id": "https://yshjain19.github.io/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://yshjain19.github.io/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Projects",
+              "item": "https://yshjain19.github.io/#projects"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Site Map",
+              "item": "https://yshjain19.github.io/#sitemap"
+            }
+          ]
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://yshjain19.github.io/#navigation",
+          "name": [
+            "About Yash Jain",
+            "Platform Impact",
+            "Featured Projects",
+            "Technical Skills",
+            "GitHub Activity",
+            "Education",
+            "Contact",
+            "Site Map"
+          ],
+          "url": [
+            "https://yshjain19.github.io/#about",
+            "https://yshjain19.github.io/#impact",
+            "https://yshjain19.github.io/#projects",
+            "https://yshjain19.github.io/#skills",
+            "https://yshjain19.github.io/#github",
+            "https://yshjain19.github.io/#education",
+            "https://yshjain19.github.io/#contact",
+            "https://yshjain19.github.io/#sitemap"
+          ]
+        },
+        {
           "@type": "ItemList",
-          "@id": "https://yshjain19.github.io/#projects",
+          "@id": "https://yshjain19.github.io/#projects-list",
           "name": "Featured Projects by Yash Jain",
           "itemListElement": [
             {
@@ -197,18 +252,30 @@
     </script>
   </head>
   <body>
-    <!-- Semantic Static Fallback for Search Crawlers & SEO (Googlebot indexing) -->
+    <!-- Semantic Static Fallback & HTML Sitemap for Search Crawlers & SEO (Googlebot indexing) -->
     <noscript>
       <header>
         <h1>Yash Jain — Full-Stack Developer &amp; Backend Engineer</h1>
         <p>Portfolio of Yash Jain (@yshjain19), Computer Science Engineering student at Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV), Indore.</p>
+        <nav aria-label="Site Navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#impact">Platform Impact</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#github">GitHub Activity</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://yshjain19.github.io/sitemap.xml">XML Sitemap</a></li>
+          </ul>
+        </nav>
       </header>
       <main>
-        <section>
+        <section id="about-static">
           <h2>About Yash Jain</h2>
           <p>Yash Jain is a full-stack web developer and backend engineer from Indore, Madhya Pradesh, India. Specializing in Node.js, Express.js, MongoDB, React, and RESTful API architecture with a strong foundation in C/C++.</p>
         </section>
-        <section>
+        <section id="impact-static">
           <h2>Platform Impact</h2>
           <ul>
             <li>9,775+ PDF Downloads on SVVV Notes</li>
@@ -217,7 +284,7 @@
             <li>3 Full-Stack Web Applications Live in Production</li>
           </ul>
         </section>
-        <section>
+        <section id="projects-static">
           <h2>Featured Projects</h2>
           <article>
             <h3>SVVV Notes</h3>
@@ -235,7 +302,7 @@
             <p><a href="https://kisanmitraai-d626.onrender.com/">Live Website</a> · <a href="https://github.com/yshjain19/kisanmitra-ai">Source Code</a></p>
           </article>
         </section>
-        <section>
+        <section id="skills-static">
           <h2>Technical Skills</h2>
           <p><strong>Languages:</strong> JavaScript, C/C++, SQL</p>
           <p><strong>Backend:</strong> Node.js, Express.js, REST APIs, Authentication &amp; Sessions</p>
@@ -243,11 +310,11 @@
           <p><strong>Database:</strong> MongoDB, Mongoose, MySQL, Cloudinary</p>
           <p><strong>Tools:</strong> Git, GitHub, Postman, VS Code, Render</p>
         </section>
-        <section>
+        <section id="education-static">
           <h2>Education</h2>
           <p>B.Tech — Computer Science Engineering, Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV), Indore (Batch 2028)</p>
         </section>
-        <section>
+        <section id="contact-static">
           <h2>Contact Yash Jain</h2>
           <ul>
             <li>Email: <a href="mailto:yshjain19@gmail.com">yshjain19@gmail.com</a></li>
@@ -256,6 +323,9 @@
           </ul>
         </section>
       </main>
+      <footer>
+        <p>XML Sitemap: <a href="https://yshjain19.github.io/sitemap.xml">sitemap.xml</a></p>
+      </footer>
     </noscript>
 
     <div id="root"></div>
