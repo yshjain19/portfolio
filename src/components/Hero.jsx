@@ -61,7 +61,7 @@ export default function Hero() {
       // Check if mouse is hovering over any interactive option or scrolled past hero
       const targetEl = document.elementFromPoint(e.clientX, e.clientY);
       const isOverOption = !!targetEl?.closest(
-        'a, button, [role="button"], .dock-item, .dock-group, .inline-tech-badge, input, textarea, .project-card, .footer__link, .sitemap-link-btn, .hero-age-ticker, .tech-chip, .contact__item, .hero-text-link'
+        'a, button, [role="button"], .dock-item, .dock-group, .inline-tech-badge, input, textarea, .project-card, .footer__link, .sitemap-link-btn, .tech-chip, .contact__item, .hero-text-link'
       );
 
       // If user has scrolled past hero, avatar must stay parked at its home slot
@@ -197,8 +197,8 @@ export default function Hero() {
               <img
                 src={PERSONAL.avatar}
                 alt={`${PERSONAL.name} portrait`}
-                width={104}
-                height={104}
+                width={124}
+                height={124}
                 className="hero-signature__avatar-img"
                 loading="eager"
               />
