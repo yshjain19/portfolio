@@ -162,7 +162,7 @@ export default function Hero() {
         {/* Top Header Section */}
         <div className="hero-signature__top-block">
           <h1 className="hero-signature__name">
-            Hi, I'm <span className="hero-signature__name-bold">YASH JAIN</span>
+            Hi, I'm <span className="hero-signature__name-bold">YASH JAIN</span> <span className="hero-signature__college-tag" title="Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV)">SVVV</span>
           </h1>
           <p className="hero-signature__tagline">
             Full stack developer from India.
