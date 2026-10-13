@@ -2402,10 +2402,12 @@ body, main, section, .navbar, .footer, .project-card, .impact-item, .tech-chip, 
 .hero-signature__avatar-disc.is-following {
   box-shadow: 0 20px 48px rgba(0, 0, 0, 0.85), 0 0 26px rgba(56, 189, 248, 0.3), 0 0 0 2px rgba(56, 189, 248, 0.5);
   z-index: 9999;
+  pointer-events: none;
 }
 
 .hero-signature__avatar-disc.is-stuck {
   box-shadow: 0 16px 36px -6px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.14);
+  pointer-events: auto;
 }
 
 .hero-signature__avatar-img {

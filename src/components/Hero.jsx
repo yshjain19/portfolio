@@ -46,7 +46,8 @@ export default function Hero() {
     const lerp = (a, b, t) => a + (b - a) * t;
 
     const handlePointerMove = (e) => {
-      if (e.pointerType === 'touch') {
+      // Touch or narrow mobile screens stay parked at home slot
+      if (e.pointerType === 'touch' || window.innerWidth < 768) {
         const p = physicsRef.current;
         p.isStuck = true;
         p.targetX = 0;
@@ -58,15 +59,15 @@ export default function Hero() {
         return;
       }
 
-      // Check if mouse is hovering over interactive options, text content, or scrolled past hero
+      // Check if mouse is hovering over clickable controls or navigation
       const targetEl = document.elementFromPoint(e.clientX, e.clientY);
-      const isOverInteractiveOrText = !!targetEl?.closest(
-        'a, button, [role="button"], .dock-item, .dock-group, .inline-tech-badge, input, textarea, .project-card, .footer__link, .sitemap-link-btn, .tech-chip, .contact__item, .hero-text-link, .hero-signature__top-block, .hero-signature__content'
+      const isOverInteractive = !!targetEl?.closest(
+        'a, button, [role="button"], input, textarea, .floating-dock, .dock-item, .dock-group, .theme-btn, .project-card, .footer__link, .sitemap-link-btn'
       );
 
-      // If user has scrolled past hero, avatar must stay parked at its home slot
+      // If user has scrolled past hero section, park cleanly in slot
       const isScrolledPast = window.scrollY > 380;
-      const shouldStick = isOverInteractiveOrText || isScrolledPast;
+      const shouldStick = isOverInteractive || isScrolledPast;
 
       const p = physicsRef.current;
       p.isStuck = shouldStick;
@@ -79,20 +80,16 @@ export default function Hero() {
         p.targetTiltX = 0;
         p.targetTiltY = 0;
       } else if (slotRef.current) {
-        // Calculate relative offset from slot center on screen
+        // Calculate relative offset from home slot center to mouse cursor
         const rect = slotRef.current.getBoundingClientRect();
         const slotCenterX = rect.left + rect.width / 2;
         const slotCenterY = rect.top + rect.height / 2;
 
-        const rawDeltaX = e.clientX - slotCenterX;
-        const rawDeltaY = e.clientY - slotCenterY;
-
-        // Tethered interactive float so avatar stays anchored to its right-side slot zone
-        p.targetX = Math.max(-85, Math.min(85, rawDeltaX * 0.42));
-        p.targetY = Math.max(-85, Math.min(85, rawDeltaY * 0.42));
-        p.targetScale = 0.95;
-        p.targetTiltY = Math.max(-10, Math.min(10, (e.movementX || 0) * 1.2));
-        p.targetTiltX = Math.max(-10, Math.min(10, -(e.movementY || 0) * 1.2));
+        p.targetX = e.clientX - slotCenterX;
+        p.targetY = e.clientY - slotCenterY;
+        p.targetScale = 0.94;
+        p.targetTiltY = Math.max(-14, Math.min(14, (e.movementX || 0) * 1.5));
+        p.targetTiltX = Math.max(-14, Math.min(14, -(e.movementY || 0) * 1.5));
       }
     };
 
@@ -108,7 +105,7 @@ export default function Hero() {
     };
 
     const handleScroll = () => {
-      if (window.scrollY > 420) {
+      if (window.scrollY > 380) {
         const p = physicsRef.current;
         p.isStuck = true;
         p.targetX = 0;
@@ -122,12 +119,16 @@ export default function Hero() {
 
     const tick = () => {
       const p = physicsRef.current;
-      const smoothFactor = p.isStuck ? 0.18 : 0.1;
+      const smoothFactor = p.isStuck ? 0.16 : 0.11;
       p.currX = lerp(p.currX, p.targetX, smoothFactor);
       p.currY = lerp(p.currY, p.targetY, smoothFactor);
       p.currScale = lerp(p.currScale, p.targetScale, 0.14);
       p.currTiltX = lerp(p.currTiltX, p.targetTiltX, 0.12);
       p.currTiltY = lerp(p.currTiltY, p.targetTiltY, 0.12);
+
+      // Decay tilt inertia toward 0 when cursor pauses
+      p.targetTiltX *= 0.88;
+      p.targetTiltY *= 0.88;
 
       if (avatarRef.current) {
         avatarRef.current.style.transform = `translate3d(${p.currX.toFixed(2)}px, ${p.currY.toFixed(2)}px, 0) scale(${p.currScale.toFixed(3)}) rotateX(${p.currTiltX.toFixed(2)}deg) rotateY(${p.currTiltY.toFixed(2)}deg)`;
