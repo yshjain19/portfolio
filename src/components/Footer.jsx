@@ -8,9 +8,19 @@ export default function Footer({ onOpenSitemap }) {
     <footer className="footer" role="contentinfo">
       <div className="container">
         <div className="footer__inner">
-          <p className="footer__copy">
-            © {currentYear} Yash Jain · Full-Stack Developer &amp; Backend Engineer
-          </p>
+          <div className="footer__brand">
+            <img
+              src="/logo.png"
+              alt="Yash Jain Logo"
+              className="footer__logo"
+              width="22"
+              height="22"
+              loading="lazy"
+            />
+            <p className="footer__copy">
+              © {currentYear} Yash Jain · Full-Stack Developer &amp; Backend Engineer
+            </p>
+          </div>
           <div className="footer__links">
             <button
               type="button"

@@ -39,8 +39,18 @@ export default function Navbar({ dark, onToggleDark, onOpenSitemap }) {
         <div className="navbar__inner">
           {/* Brand */}
           <a href="#top" className="navbar__brand" aria-label="Yash Jain — home">
-            Yash Jain
-            <span className="navbar__username">{PERSONAL.username}</span>
+            <img
+              src="/logo.png"
+              alt="Yash Jain Logo"
+              className="navbar__logo"
+              width="28"
+              height="28"
+              loading="eager"
+            />
+            <span className="navbar__brand-text">
+              Yash Jain
+              <span className="navbar__username">{PERSONAL.username}</span>
+            </span>
           </a>
 
           {/* Desktop nav */}

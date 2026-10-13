@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yashjain.urbackend.in/sitemap.xml
+Sitemap: https://urbackend.in/sitemap.xml
