@@ -21,15 +21,16 @@ export const PERSONAL = {
 
   // ── Bio paragraphs shown in Hero ────────────────────────────
   heroBio: [
-    "I'm a Computer Science Engineering student (CSE '28) and backend-focused full-stack developer from Indore, India. I built and launched SVVV Notes, an academic sharing platform that has scaled to 9,775+ resource downloads and 1,390+ unique student sessions.",
-    "My core stack includes Node.js, Express.js, MongoDB, JavaScript, and REST APIs, backed by solid problem-solving fundamentals in C/C++. I love participating in hackathons, architecting server-side workflows, and shipping products that people actually use.",
+    "I'm a 19.9 year old full stack developer from India. I enjoy programming, building products, and exploring technology.",
+    "I build things with JavaScript, Node.js, Express.js, MongoDB, React, HTML, CSS, Bootstrap, and REST APIs, along with other tools and technologies. I also occasionally write blogs.",
+    "I'm currently building full stack projects like SVVV Notes and PrestigeStay, exploring AI and developer tooling, and improving my problem-solving skills through DSA. I like building things that are fast, accessible, and well crafted.",
   ],
 
   // ── Longer About section ────────────────────────────────────
   about: [
-    "I'm Yash Jain, a full-stack developer and Computer Science Engineering student at Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV), Indore (Batch of 2028). I'm passionate about full-stack development, server-side systems, and engineering software with proven real-world adoption.",
-    "My flagship project, SVVV Notes, solved the campus-wide problem of fragmented study resources. In production, the platform has surpassed 9,775+ total downloads (8,300+ unique), 1,390+ student sessions across 1,328+ unique IPs, and hosts 211+ curated study materials for university students.",
-    "I actively participate in hackathons and rapid prototyping sprints. Outside of project work, I'm diving deeper into database optimization, authentication patterns, and scalable web architectures.",
+    "I'm a 19.9 year old full stack developer from India. I enjoy programming, building products, and exploring technology.",
+    "I build things with JavaScript, Node.js, Express.js, MongoDB, React, HTML, CSS, Bootstrap, and REST APIs, along with other tools and technologies. I also occasionally write blogs.",
+    "I'm currently building full stack projects like SVVV Notes and PrestigeStay, exploring AI and developer tooling, and improving my problem-solving skills through DSA. I like building things that are fast, accessible, and well crafted.",
   ],
 };
 

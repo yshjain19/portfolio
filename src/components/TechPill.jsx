@@ -7,6 +7,14 @@ export default function TechPill({ name, type }) {
             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.632 17.518L9.227 7.027H7.135v9.945h1.722v-7.46l7.357 9.421a10.05 10.05 0 0 1-1.42 1.415l-.962-.83z" />
           </svg>
         );
+      case 'js':
+      case 'javascript':
+        return (
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#f7df1e">
+            <rect width="24" height="24" rx="3" fill="#f7df1e" />
+            <path d="M6 18.5c1.2 0 2-.6 2-1.9V10h1.8v6.6c0 2.2-1.4 3.4-3.8 3.4-1.2 0-2.3-.4-3-1l.9-1.5c.6.5 1.3.8 2.1.8zm7.5-.2c.7.4 1.7.7 2.7.7 1.4 0 2.3-.7 2.3-1.8 0-1-.6-1.5-2.2-2.1-2.1-.8-3.2-1.8-3.2-3.4 0-2 1.6-3.4 4-3.4 1.2 0 2.2.3 2.8.7l-.8 1.5c-.5-.3-1.2-.6-2-.6-1.3 0-2.1.7-2.1 1.6 0 .9.6 1.4 2.1 2 2.2.8 3.3 1.8 3.3 3.5 0 2.1-1.6 3.6-4.3 3.6-1.4 0-2.6-.4-3.4-.9l.8-1.5z" fill="#000" />
+          </svg>
+        );
       case 'react':
         return (
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" strokeWidth="2">
@@ -22,10 +30,42 @@ export default function TechPill({ name, type }) {
             <path d="M12 2l9 5.2v10.4L12 22l-9-5.2V7.2L12 2zm0 2.3L4.8 8.5v7l7.2 4.2 7.2-4.2v-7L12 4.3z" />
           </svg>
         );
+      case 'express':
+        return (
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        );
       case 'mongo':
+      case 'mongodb':
         return (
           <svg width="12" height="12" viewBox="0 0 24 24" fill="#16a34a">
             <path d="M12 1.5s-4.5 4-4.5 10.5c0 5 3.5 9 4.5 10.5 1-1.5 4.5-5.5 4.5-10.5 0-6.5-4.5-10.5-4.5-10.5zm0 18.5c-.7-1.3-3-4.5-3-8.5 0-4.2 2.5-7.4 3-8 0 0 .1.1.1.2v16.3h-.1z" />
+          </svg>
+        );
+      case 'html':
+        return (
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#f97316">
+            <path d="M3 2l1.8 20.2L12 24l7.2-1.8L21 2H3zm14.8 5.7h-7.6l.2 2.3h7.1l-.7 7.6-4.8 1.3-4.8-1.3-.3-3.6h2.2l.2 1.8 2.7.7 2.7-.7.3-3.5H7.7l-.7-6.9h11.1l-.3 2.3z" />
+          </svg>
+        );
+      case 'css':
+        return (
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#38bdf8">
+            <path d="M3 2l1.8 20.2L12 24l7.2-1.8L21 2H3zm14.8 5.7h-7.6l.2 2.3h7.1l-.7 7.6-4.8 1.3-4.8-1.3-.3-3.6h2.2l.2 1.8 2.7.7 2.7-.7.3-3.5H7.7l-.7-6.9h11.1l-.3 2.3z" />
+          </svg>
+        );
+      case 'bootstrap':
+        return (
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#a855f7">
+            <path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm4.8 4v10h4.4c2.2 0 3.8-1.1 3.8-2.9 0-1.2-.7-2.1-1.8-2.5 1-.4 1.5-1.3 1.5-2.3 0-1.6-1.3-2.3-3.4-2.3H8.8zm2.4 1.9h1.7c1 0 1.6.4 1.6 1.1 0 .8-.7 1.2-1.7 1.2h-1.6V8.9zm0 4.1h2c1.1 0 1.8.4 1.8 1.3 0 .9-.8 1.4-1.9 1.4h-1.9V13z" />
+          </svg>
+        );
+      case 'api':
+      case 'rest':
+        return (
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
           </svg>
         );
       case 'cpp':

@@ -183,11 +183,11 @@ export default function Hero() {
             </p>
 
             <p className="hero-signature__para">
-              I build things with <TechPill name="Next.js" type="next" /> <TechPill name="Java" type="cpp" /> <TechPill name="GitHub Actions" type="github" /> and some other tooling. I also occasionally write <a href="#projects" className="hero-text-link">blogs</a>.
+              I build things with <TechPill name="JavaScript" type="js" /> <TechPill name="Node.js" type="node" /> <TechPill name="Express.js" type="express" /> <TechPill name="MongoDB" type="mongo" /> <TechPill name="React" type="react" /> <TechPill name="HTML" type="html" /> <TechPill name="CSS" type="css" /> <TechPill name="Bootstrap" type="bootstrap" /> and <TechPill name="REST APIs" type="api" />, along with other tools and technologies. I also occasionally write <a href="#projects" className="hero-text-link">blogs</a>.
             </p>
 
             <p className="hero-signature__para">
-              I'm currently working on full stack projects, exploring AI and developer tooling, and contributing to open source. I like building things that are fast, accessible, and well crafted.
+              I'm currently building full stack projects like <a href="https://svvv-notes.onrender.com/" target="_blank" rel="noopener noreferrer" className="hero-text-link">SVVV Notes</a> and <a href="https://prestigestay.onrender.com/" target="_blank" rel="noopener noreferrer" className="hero-text-link">PrestigeStay</a>, exploring AI and developer tooling, and improving my problem-solving skills through DSA. I like building things that are fast, accessible, and well crafted.
             </p>
           </div>
 
