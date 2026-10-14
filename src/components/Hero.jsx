@@ -151,7 +151,13 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="hero-signature" id="top" aria-label="Introduction">
+    <section
+      className="hero-signature"
+      id="top"
+      aria-label="Introduction to Yash Jain"
+      itemScope
+      itemType="https://schema.org/Person"
+    >
       {/* Target for #about links so they smoothly land here */}
       <div id="about" style={{ position: 'absolute', top: 0 }} />
 
@@ -162,13 +168,14 @@ export default function Hero() {
         {/* Top Header Section */}
         <div className="hero-signature__top-block">
           <h1 className="hero-signature__name">
-            Hi, I'm <span className="hero-signature__name-bold">YASH JAIN</span> <span className="hero-signature__college-tag" title="Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV)">SVVV</span>
+            Hi, I'm <span className="hero-signature__name-bold" itemProp="name">YASH JAIN</span> <span className="hero-signature__college-tag" title="Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV)">SVVV</span>
+            <span className="sr-only"> — Official Portfolio &amp; Full-Stack Developer Yash Jain</span>
           </h1>
-          <p className="hero-signature__tagline">
+          <p className="hero-signature__tagline" itemProp="jobTitle">
             Full stack developer from India.
           </p>
           <div className="hero-signature__status-row">
-            <span className="hero-signature__handle">{PERSONAL.username}</span>
+            <span className="hero-signature__handle" itemProp="alternateName">{PERSONAL.username}</span>
             <span className="hero-signature__dot">·</span>
             <span className="hero-signature__status-text">
               open for freelance work
@@ -178,7 +185,7 @@ export default function Hero() {
 
         {/* Bio Content Row with Avatar Slot on Right */}
         <div className="hero-signature__bio-row">
-          <div className="hero-signature__content">
+          <div className="hero-signature__content" itemProp="description">
             <p className="hero-signature__para">
               I'm a <span className="hero-age-ticker">{age}</span> year old full stack developer from India. I enjoy programming, building products, and exploring technology.
             </p>
@@ -201,11 +208,12 @@ export default function Hero() {
             >
               <img
                 src={PERSONAL.avatar}
-                alt={`${PERSONAL.name} portrait`}
+                alt="Yash Jain — Full-Stack Developer & Backend Engineer"
                 width={124}
                 height={124}
                 className="hero-signature__avatar-img"
                 loading="eager"
+                itemProp="image"
               />
               <div className="hero-signature__avatar-glow" aria-hidden="true" />
               <div className="hero-signature__avatar-border" aria-hidden="true" />

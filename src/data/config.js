@@ -104,7 +104,7 @@ export const PROJECTS = [
     live: "https://svvv-notes.onrender.com/",
     repo: "https://github.com/yshjain19/SVVV_Notes",
     thumbnail: "/svvv-notes.jpg",
-    thumbnailAlt: "SVVV Notes — notes-sharing platform interface",
+    thumbnailAlt: "SVVV Notes — Student academic study resource platform developed by Yash Jain",
     accent: "#3b82f6",
   },
   {
@@ -134,7 +134,7 @@ export const PROJECTS = [
     live: "https://prestigestay.onrender.com/",
     repo: "https://github.com/yshjain19/Airbnb",
     thumbnail: "/prestigestay.jpg",
-    thumbnailAlt: "PrestigeStay — accommodation listing web app",
+    thumbnailAlt: "PrestigeStay — Full-stack vacation accommodation rental platform by Yash Jain",
     accent: "#f59e0b",
   },
   {
@@ -151,7 +151,7 @@ export const PROJECTS = [
     live: "https://kisanmitraai-d626.onrender.com/",
     repo: "https://github.com/yshjain19/kisanmitra-ai",
     thumbnail: "/kisanmitra.jpg",
-    thumbnailAlt: "Kisan Mitra AI — agricultural advisory application",
+    thumbnailAlt: "Kisan Mitra AI — Agricultural advisory application built by Yash Jain",
     accent: "#22c55e",
   },
 ];

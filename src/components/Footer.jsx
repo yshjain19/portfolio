@@ -11,7 +11,7 @@ export default function Footer({ onOpenSitemap }) {
           <div className="footer__brand">
             <img
               src="/logo.png"
-              alt="Yash Jain Logo"
+              alt="Yash Jain — Official Logo"
               className="footer__logo"
               width="22"
               height="22"

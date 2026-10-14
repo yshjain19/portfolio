@@ -1,0 +1,28 @@
+# Yash Jain — Official Portfolio
+
+> Yash Jain is a Full-Stack Web Developer and Backend Engineer based in Indore, Madhya Pradesh, India. He is currently pursuing his B.Tech in Computer Science Engineering at Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV) (Batch 2028).
+
+- Canonical URL: https://urbackend.in/
+- GitHub: https://github.com/yshjain19
+- LinkedIn: https://www.linkedin.com/in/yash-jain-6b6647320/
+- Email: yshjain19@gmail.com
+
+## Key Information
+- Name: Yash Jain
+- Alias / Username: yshjain19
+- Roles: Full-Stack Developer, Backend Engineer, Software Engineer
+- Location: Indore, Madhya Pradesh, India
+- University: Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV), Indore
+- Degree: B.Tech Computer Science Engineering (Class of 2028)
+
+## Core Technical Skills
+- Languages: JavaScript, C, C++, SQL, HTML5, CSS3
+- Backend: Node.js, Express.js, RESTful APIs, Authentication & Sessions, System Design
+- Frontend: React.js, Bootstrap, EJS
+- Databases & Storage: MongoDB, Mongoose, MySQL, Cloudinary
+- Developer Tools: Git, GitHub, Postman, VS Code, Render
+
+## Flagship Projects
+- [SVVV Notes](https://svvv-notes.onrender.com/): A centralized student academic notes and resource-sharing platform with 9,775+ downloads, 1,390+ unique student sessions, and 210+ curated materials. Built with Node.js, Express, MongoDB, EJS, and Cloudinary. (GitHub: https://github.com/yshjain19/SVVV_Notes)
+- [PrestigeStay](https://prestigestay.onrender.com/): Full-stack vacation rental and accommodation platform inspired by Airbnb featuring listings, reviews, user authentication, and Cloudinary media management. Built with Node.js, Express, MongoDB. (GitHub: https://github.com/yshjain19/Airbnb)
+- [Kisan Mitra AI](https://kisanmitraai-d626.onrender.com/): Agricultural advisory and market price application assisting farmers with real-time insights and chat advisory. Built with Node.js and AI integration. (GitHub: https://github.com/yshjain19/kisanmitra-ai)

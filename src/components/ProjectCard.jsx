@@ -9,10 +9,12 @@ export default function ProjectCard({ project }) {
     <article
       ref={cardRef}
       className="project-card project-card--3d"
-      aria-label={`Project: ${name}`}
+      aria-label={`Project: ${name} by Yash Jain`}
       itemScope
       itemType="https://schema.org/SoftwareApplication"
     >
+      <meta itemProp="author" content="Yash Jain" />
+      <meta itemProp="creator" content="Yash Jain" />
       {/* Specular 3D Hologram Glare Overlay */}
       <div className="project-card__glare" aria-hidden="true" />
 

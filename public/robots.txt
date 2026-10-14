@@ -1,4 +1,45 @@
+# Robots.txt for Yash Jain Portfolio (https://urbackend.in)
 User-agent: *
 Allow: /
 
+# Googlebot & Bingbot
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI Crawlers & LLM Engines (ChatGPT, Perplexity, Claude, Apple, Gemini)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap
 Sitemap: https://urbackend.in/sitemap.xml
+

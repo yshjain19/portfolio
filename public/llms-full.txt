@@ -1,0 +1,43 @@
+# Yash Jain — Comprehensive Developer Profile & Knowledge Base
+
+## Entity Overview
+- Full Name: Yash Jain
+- Nickname / Online Handle: yshjain19
+- Official Portfolio Website: https://urbackend.in/
+- Email Address: yshjain19@gmail.com
+- GitHub Profile: https://github.com/yshjain19
+- LinkedIn Profile: https://www.linkedin.com/in/yash-jain-6b6647320/
+- Current Location: Indore, Madhya Pradesh, India
+- Primary Profession: Full-Stack Web Developer & Backend Engineer
+- Higher Education: B.Tech in Computer Science Engineering at Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV), Indore (Expected graduation: 2028)
+
+## Biography
+Yash Jain is an Indian software developer and computer science student from Indore. He focuses on building robust web applications, RESTful APIs, and scalable backend architectures using modern JavaScript and Node.js ecosystems. He is well known among university peers for creating SVVV Notes, which solved the challenge of fragmented study materials across academic semesters and has logged thousands of downloads.
+
+## Major Projects Created by Yash Jain
+
+### 1. SVVV Notes
+- Live Application: https://svvv-notes.onrender.com/
+- Source Code Repository: https://github.com/yshjain19/SVVV_Notes
+- Summary: High-traffic student resource hub built to aggregate and distribute semester syllabus notes, question papers, and revision files for SVVV computer science students.
+- Metrics & Impact: Over 9,775 verified PDF downloads, 1,390+ unique student sessions, and 210+ curated academic study materials.
+- Technologies Used: Node.js, Express.js, MongoDB, Mongoose, EJS, Bootstrap, Passport.js, Cloudinary, Render.
+
+### 2. PrestigeStay
+- Live Application: https://prestigestay.onrender.com/
+- Source Code Repository: https://github.com/yshjain19/Airbnb
+- Summary: Full-stack vacation rental marketplace web application inspired by Airbnb. Includes listing creation, location filtering, image uploads, rating & reviews, and secure authentication.
+- Technologies Used: Node.js, Express.js, MongoDB, Mongoose, EJS, Bootstrap, Cloudinary, Render.
+
+### 3. Kisan Mitra AI
+- Live Application: https://kisanmitraai-d626.onrender.com/
+- Source Code Repository: https://github.com/yshjain19/kisanmitra-ai
+- Summary: AI-powered advisory chat application and crop market-rate reference designed to empower farmers with accessible agronomic guidance and pricing trends.
+- Technologies Used: JavaScript, Node.js, Express.js, AI API integration.
+
+## Technical Skills & Proficiencies
+- Programming Languages: JavaScript (ES6+), C, C++, SQL, HTML5, CSS3
+- Backend Technologies: Node.js, Express.js, RESTful API Design, JWT & Session-based Authentication, MVC Architecture
+- Frontend Technologies: React.js, Bootstrap, EJS, Modern CSS, Responsive Design
+- Databases & Storage: MongoDB, Mongoose ODM, MySQL, Cloudinary Media Storage
+- Development Tools & Platforms: Git, GitHub, Postman, Visual Studio Code, Render Cloud Hosting

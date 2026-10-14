@@ -4,86 +4,86 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://urbackend.in/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://urbackend.in/" />
     <image:image>
       <image:loc>https://urbackend.in/logo.png</image:loc>
-      <image:title>Yash Jain — Official Logo</image:title>
-      <image:caption>Brand identity monogram logo for Yash Jain Developer &amp; Backend Engineer</image:caption>
+      <image:title>Yash Jain — Official Logo &amp; Brand Identity</image:title>
+      <image:caption>Brand identity monogram logo for Yash Jain, Full-Stack Developer &amp; Backend Engineer</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://urbackend.in/avatar.jpg</image:loc>
-      <image:title>Yash Jain — Profile Portrait</image:title>
+      <image:title>Yash Jain — Official Profile Portrait</image:title>
       <image:caption>Yash Jain, Full-Stack Developer &amp; Backend Engineer from Indore, India</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://urbackend.in/og-image.jpg</image:loc>
-      <image:title>Yash Jain — Developer Portfolio Overview</image:title>
+      <image:title>Yash Jain — Official Portfolio &amp; Developer Website</image:title>
       <image:caption>Official personal portfolio of Yash Jain featuring SVVV Notes, PrestigeStay, and Kisan Mitra AI</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://urbackend.in/svvv-notes.jpg</image:loc>
-      <image:title>SVVV Notes — Academic Platform Interface</image:title>
-      <image:caption>SVVV Notes platform with 9.7K+ downloads and 1.3K+ users</image:caption>
+      <image:title>SVVV Notes — Academic Platform Created by Yash Jain</image:title>
+      <image:caption>SVVV Notes platform built by Yash Jain with 9.7K+ downloads and 1.3K+ student users</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://urbackend.in/prestigestay.jpg</image:loc>
-      <image:title>PrestigeStay — Full-Stack Accommodation Platform</image:title>
-      <image:caption>Full-stack rental marketplace web application built with Node.js, Express, and MongoDB</image:caption>
+      <image:title>PrestigeStay — Vacation Rental Platform Built by Yash Jain</image:title>
+      <image:caption>Full-stack rental marketplace web application built by Yash Jain with Node.js, Express, and MongoDB</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://urbackend.in/kisanmitra.jpg</image:loc>
-      <image:title>Kisan Mitra AI — Agricultural Advisory Application</image:title>
-      <image:caption>AI-powered advisory and market price application for farmers</image:caption>
+      <image:title>Kisan Mitra AI — Agricultural Advisory Application Created by Yash Jain</image:title>
+      <image:caption>AI-powered advisory and market price application for farmers developed by Yash Jain</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://urbackend.in/#projects</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://urbackend.in/#about</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://urbackend.in/#impact</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://urbackend.in/#skills</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://urbackend.in/#github</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://urbackend.in/#education</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://urbackend.in/#contact</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://urbackend.in/#sitemap</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
